@@ -16,9 +16,9 @@ class Room{
 		}
 	}
 	removeOccupant(){
-
+		
 	}
 	getRoomService(food){
-		this.hotel.getKitchenService();
+		this.hotel.getKitchenService(food);
 	}
 }
