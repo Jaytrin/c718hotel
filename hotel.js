@@ -29,5 +29,15 @@ class Hotel{
 	getKitchenService(){
 		
 	}
+	getUnoccupiedRoom(){
+		for(var i = 0; i < this.rooms.length - 1; i++){
+			var availableRoom;
+			if(!this.rooms[i].occupant){
+				availableRoom = this.rooms[i];
+				break;
+			}
+		}
+		return availableRoom;
+	}
 
 }
